@@ -74,6 +74,18 @@ var FauxtonAPI = {
   },
 
   /**
+   * Hides a permanent notification message
+   *
+   * @param {object} message
+   */
+  hidePermanentNotification: function () {
+    FauxtonAPI.reduxDispatch({
+      type: 'HIDE_PERMANENT_NOTIFICATION'
+    });
+  },
+
+
+  /**
    * Shows a permanent notification message
    *
    * @param {object} message
