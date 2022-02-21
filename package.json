@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.17.3",
-    "@babel/core": "^7.17.3",
+    "@babel/core": "^7.17.5",
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/plugin-proposal-object-rest-spread": "^7.17.3",
     "@babel/plugin-transform-async-to-generator": "^7.16.8",
@@ -63,7 +63,7 @@
   },
   "dependencies": {
     "@webcomponents/url": "^0.7.8",
-    "acorn": "^6.4.2",
+    "acorn": "^8.7.0",
     "ajv": "^6.12.6",
     "async": "~0.2.6",
     "backbone": "^1.4.0",
@@ -76,7 +76,7 @@
     "cookie": "^0.3.1",
     "core-js": "^2.6.11",
     "d3": "^3.4.11",
-    "express": "^4.17.2",
+    "express": "^4.17.3",
     "http-proxy": "^1.18.1",
     "jquery": "^3.5.1",
     "jquery-param-fn": "^1.0.0",
