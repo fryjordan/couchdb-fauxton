@@ -80,7 +80,7 @@
     "http-proxy": "^1.18.1",
     "jquery": "^3.5.1",
     "jquery-param-fn": "^1.0.0",
-    "jsondiffpatch": "^0.3.11",
+    "jsondiffpatch": "^0.4.1",
     "lodash": "^4.17.20",
     "mkdirp": "^1.0.4",
     "moment": "^2.29.1",
