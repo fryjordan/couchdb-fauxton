@@ -65,7 +65,7 @@
     "@webcomponents/url": "^0.7.8",
     "acorn": "^8.7.0",
     "ajv": "^8.10.0",
-    "async": "~0.2.6",
+    "async": "~3.2.3",
     "backbone": "^1.4.0",
     "base-64": "^1.0.0",
     "bluebird": "^3.7.2",
