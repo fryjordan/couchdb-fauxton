@@ -9,11 +9,7 @@
 
   "webdriver": {
     "start_process": false,
-    "server_path": "/usr/local/share/chrome_driver",
-    "host" : "127.0.0.1",
-    "port" : "<%- selenium_port %>",
-    "ssl": false,
-    "password": "<%- password %>"
+    "server_path": "/usr/local/share/chrome_driver"
   },
 
   "test_settings" : {
