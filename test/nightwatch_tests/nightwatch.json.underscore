@@ -12,7 +12,8 @@
     "ssl": false,
     "password": "<%- password %>",
     "host" : "127.0.0.1",
-    "port" : "<%- selenium_port %>"
+    "port" : "<%- selenium_port %>",
+    "server_path": "/usr/local/share/chrome_driver"
   },
 
   "test_settings" : {
@@ -49,7 +50,7 @@
         "javascriptEnabled" : true,
         "acceptSslCerts" : true,
         "chromeOptions" : {
-          "args" : ["window-size=1400,900", "--no-sandbox", "--headless", "--disable-gpu", "--disable-dev-shm-usage", "--remote-debugging-port=9222", "--version=100.0.4896"]
+          "args" : ["window-size=1400,900", "--no-sandbox", "--headless", "--disable-gpu", "--disable-dev-shm-usage", "--remote-debugging-port=9222"]
         }
       }
     }
