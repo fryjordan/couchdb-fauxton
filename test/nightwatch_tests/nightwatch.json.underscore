@@ -33,6 +33,7 @@
       },
       "desiredCapabilities" : {
         "browserName" : "chrome",
+        "version": "100.0.0",
         "javascriptEnabled" : true,
         "acceptSslCerts" : true,
         "chromeOptions": {
