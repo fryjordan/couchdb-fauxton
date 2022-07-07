@@ -40,7 +40,7 @@ jobs:
         COUCHDB_IMAGE: ${{ matrix.COUCHDB_IMAGE }}
         NIGHTWATCH_SKIPTAGS: ${{ matrix.NIGHTWATCH_SKIPTAGS }}
     - name: Change chrome-driver permissions
-      run: "sudo chmod -R 777 /usr/local/share/chrome_driver"
+      run: "sudo chmod -R +x /usr/local/share/chrome_driver"
     - name: Install npm packages
       run: |
         npm install -g npm@latest
