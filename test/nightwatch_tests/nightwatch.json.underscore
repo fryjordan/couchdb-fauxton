@@ -8,7 +8,7 @@
   "live_output" : false,
 
   "webdriver": {
-    "start_process": true,
+    "start_process": false,
     "server_path": "/usr/local/share/chrome_driver",
     "password": "<%- password %>",
     "host" : "127.0.0.1",
