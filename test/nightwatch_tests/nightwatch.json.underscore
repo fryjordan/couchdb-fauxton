@@ -8,8 +8,11 @@
   "live_output" : false,
 
   "webdriver": {
-    "start_process": false,
-    "server_path": "/usr/local/share/chrome_driver"
+    "start_process": true,
+    "server_path": "/usr/local/share/chrome_driver",
+    "password": "<%- password %>",
+    "host" : "127.0.0.1",
+    "port" : "<%- selenium_port %>"
   },
 
   "test_settings" : {
