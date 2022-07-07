@@ -43,7 +43,7 @@ jobs:
       run: "sudo chmod -R +x /usr/local/share/chrome_driver"
     - name: Script
       run: |
-        $CHROMEWEBDRIVER/chromedriver
+        $CHROMEWEBDRIVER/chromedriver &
     - name: Install npm packages
       run: |
         npm install -g npm@latest
