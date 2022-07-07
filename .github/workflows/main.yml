@@ -1,23 +1,23 @@
 name: CI
 on: [push, pull_request]
 jobs:
-  run-unit-tests:
-    name: Run unit tests
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
-      with:
-        node-version: '14'
-    - name: Install npm packages
-      run: |
-        npm install -g npm@latest
-        npm ci
-        npm ls --production --depth=0
-    - name: Run style check
-      run: npm run stylecheck
-    - name: Run unit tests
-      run: npm run test
+  # run-unit-tests:
+  #   name: Run unit tests
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - uses: actions/checkout@v2
+  #   - uses: actions/setup-node@v2
+  #     with:
+  #       node-version: '14'
+  #   - name: Install npm packages
+  #     run: |
+  #       npm install -g npm@latest
+  #       npm ci
+  #       npm ls --production --depth=0
+  #   - name: Run style check
+  #     run: npm run stylecheck
+  #   - name: Run unit tests
+  #     run: npm run test
   run-e2e-tests:
     name: Run e2e tests
     runs-on: ubuntu-latest
@@ -27,8 +27,8 @@ jobs:
         include:
           - COUCHDB_IMAGE: apache/couchdb:3
             NIGHTWATCH_SKIPTAGS: "search,nonpartitioned,couchdb-v2-only"
-          - COUCHDB_IMAGE: apache/couchdb:2.3.1
-            NIGHTWATCH_SKIPTAGS: "search,partitioned"
+          # - COUCHDB_IMAGE: apache/couchdb:2.3.1
+          #   NIGHTWATCH_SKIPTAGS: "search,partitioned"
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2
@@ -39,6 +39,8 @@ jobs:
       env:
         COUCHDB_IMAGE: ${{ matrix.COUCHDB_IMAGE }}
         NIGHTWATCH_SKIPTAGS: ${{ matrix.NIGHTWATCH_SKIPTAGS }}
+    - name: Change chrome-driver permissions
+      run: "chmod -R 777 /usr/local/share/chrome_driver"
     - name: Install npm packages
       run: |
         npm install -g npm@latest
